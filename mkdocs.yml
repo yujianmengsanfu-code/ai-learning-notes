@@ -1,0 +1,52 @@
+site_name: AI 学习之旅
+site_description: 记录我的AI学习过程与资料整理
+site_author: yjm_s
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - 首页: index.md
+  - 学习笔记:
+    - 快速入门: notes/getting-started.md
+    - 深度学习基础: notes/deep-learning-basics.md
+  - 资源库:
+    - 视频教程: resources/videos.md
+    - 论文资料: resources/papers.md
+  - 学习日志: daily/index.md
